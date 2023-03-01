@@ -1,0 +1,20 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDragAndDrop": false,
+    "files.exclude": {
+      "**/__pycache__": true
+    },
+    "explorer.confirmDelete": false,
+    "notebook.output.textLineLimit": 300,
+    "editor.formatOnSave": true,
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "workbench.tree.indent": 14,
+    "workbench.colorCustomizations": {
+      "tree.indentGuidesStroke": "#00ff00"
+    }
+  }
+  
