@@ -46,3 +46,5 @@ https://github.com/nsidnev/fastapi-realworld-example-app
 https://github.com/testdrivenio/fastapi-crud-async/tree/master/src/app/api
 
 https://github.com/zhanymkanov/fastapi-best-practices#1-project-structure-consistent--predictable
+
+https://github.com/FumoCam/Whitelist-Censor-Client/blob/7f816a224d4a07221ece5b7284e14124d7ecdae0/censor_client/app.py
