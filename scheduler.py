@@ -23,10 +23,11 @@ async def do_short():
     await send_to_channel('test')
     await asyncio.sleep(1)
 
-# @app.task(every('20 seconds', based="finish"))
-# async def do_long():
-#     "This runs for long time"
-#     await asyncio.sleep(60)
+@app.task(every('20 seconds', based="finish"))
+async def do_long():
+    "This runs for long time"
+    await send_to_channel('test2')
+    await asyncio.sleep(60)
 
 # @app.task(every('10 seconds', based="finish"))
 # async def do_fail():
