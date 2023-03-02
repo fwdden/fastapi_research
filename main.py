@@ -24,10 +24,10 @@ async def main():
 
     await asyncio.wait([sched, api])
 
-if __name__ == "__main__":
-    # # Print Rocketry's logs to terminal
-    logger = logging.getLogger("rocketry.task")
-    logger.addHandler(logging.StreamHandler())
+# if __name__ == "__main__":
+#     # # Print Rocketry's logs to terminal
+#     logger = logging.getLogger("rocketry.task")
+#     logger.addHandler(logging.StreamHandler())
 
-    # Run both applications
-    asyncio.run(main())
+#     # Run both applications
+#     asyncio.run(main())

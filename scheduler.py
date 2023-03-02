@@ -3,6 +3,8 @@ import logging
 from rocketry import Rocketry
 from rocketry.conds import every
 
+from src.bot import send_to_channel
+
 # https://itnext.io/scheduler-with-an-api-rocketry-fastapi-a0f742278d5b
 # https://github.com/Miksus/rocketry-with-fastapi
 
@@ -15,10 +17,10 @@ logger.addHandler(logging.StreamHandler())
 #     "This runs for really long time"
 #     await asyncio.sleep(600000)
 
-@app.task(every('2 seconds', based="finish"))
+@app.task(every('10 seconds', based="finish"))
 async def do_short():
     "This runs for short time"
-    print('1')
+    await send_to_channel('test')
     await asyncio.sleep(1)
 
 # @app.task(every('20 seconds', based="finish"))
